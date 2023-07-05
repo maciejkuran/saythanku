@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+
+.notification {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1rem;
+  background-color: $grey;
+  border-radius: $border-radius;
+  width: 100%;
+
+  span {
+    font-size: 2rem;
+  }
+}
+
+.success {
+  border-top: 5px solid $green1;
+}
+
+.error {
+  border-top: 5px solid $red;
+}

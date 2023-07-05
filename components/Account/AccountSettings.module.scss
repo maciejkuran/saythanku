@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+
+.settings {
+  background: $white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  max-width: 57rem;
+  width: 100%;
+  box-shadow: $box-shadow2;
+  z-index: 5;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 625px) {
+  .settings {
+    width: 95%;
+  }
+}

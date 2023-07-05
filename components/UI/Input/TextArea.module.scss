@@ -1,0 +1,19 @@
+@import '../../../styles/variables.scss';
+
+.textarea {
+  background: $gradient1;
+  border-radius: $border-radius;
+  padding: 0.5rem 2rem;
+  box-shadow: $box-shadow;
+  transition: all 200ms ease-in-out;
+  border-bottom: 2px solid transparent;
+
+  &:focus {
+    border-bottom: 2px solid $grey2;
+    transform: scale(101%);
+  }
+
+  &::placeholder {
+    color: rgb(205, 205, 205);
+  }
+}

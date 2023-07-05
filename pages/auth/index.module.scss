@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+
+.auth {
+  @include flex(column, center, center);
+  padding: 0 1rem;
+
+  h1 {
+    margin: 2rem 0 1rem 0;
+  }
+}

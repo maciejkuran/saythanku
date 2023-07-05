@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+
+.gifts {
+  @include flex(row, flex-start, center);
+  gap: 0.5rem;
+  width: 100%;
+  flex-wrap: wrap;
+
+  li {
+    cursor: pointer;
+  }
+}
+
+.active {
+  border: 2px solid $black;
+  border-radius: $border-radius;
+  transform: scale(1.3);
+}
+
+.inactive {
+  &:hover {
+    transform: scale(1.2);
+    border: 2px solid $grey2;
+    border-radius: $border-radius;
+  }
+}

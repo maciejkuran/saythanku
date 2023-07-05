@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+
+.privacy {
+  max-width: 65rem;
+  width: 100%;
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  &__user-data {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: $gradient3;
+
+    li {
+      font-weight: 600;
+      margin: 0.5rem 0;
+      border-bottom: 1px solid $grey1;
+      padding-bottom: 1rem;
+    }
+  }
+}

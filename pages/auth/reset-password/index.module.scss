@@ -1,0 +1,16 @@
+@import '../../../styles/variables.scss';
+
+.recovery {
+  @include flex(column, center, center);
+  padding: 0 1rem;
+
+  &__wrapper {
+    max-width: 50rem;
+    width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+  }
+}

@@ -1,0 +1,157 @@
+@import '../styles/variables.scss';
+
+.header {
+  @include flex(row, center, center);
+  column-gap: 5rem;
+  row-gap: 3rem;
+  max-width: 80rem;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+
+  div {
+    max-width: 50rem;
+
+    h6 {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+      span {
+        color: $pink1;
+      }
+    }
+    p {
+      margin-bottom: 2rem;
+
+      span {
+        font-weight: 600;
+        background: linear-gradient(
+            104deg,
+            rgba(188, 0, 195, 0) 0.9%,
+
+            rgba(243, 224, 242, 0.5) 5.8%,
+            rgba(183, 35, 199, 0.1) 93%,
+            rgba(215, 160, 219, 0.7) 96%,
+            rgba(130, 255, 1732, 0) 98%
+          ),
+          linear-gradient(
+            183deg,
+            rgba(105, 3, 113, 0) 0%,
+            rgba(249, 65, 243, 0.3) 7.9%,
+            rgba(206, 0, 134, 0) 15%
+          );
+        border-radius: 7.5px;
+      }
+    }
+  }
+}
+
+.how-it-works {
+  scroll-margin: 10rem;
+  margin-top: 15rem;
+  max-width: 110rem;
+  width: 100%;
+  @include flex(column, center, center);
+
+  &__card {
+    background: $gradient1;
+  }
+
+  h2,
+  p {
+    text-align: center;
+  }
+
+  ul {
+    @include flex(column, flex-start, flex-start);
+    max-width: 100rem;
+    width: 100%;
+    row-gap: 2rem;
+    margin-top: 3rem;
+
+    li {
+      width: 100%;
+    }
+  }
+
+  &__icons {
+    @include flex(row, flex-start, center);
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+}
+
+.our-mission {
+  scroll-margin: 10rem;
+  max-width: 120rem;
+  width: 100%;
+  @include flex(column, center, center);
+  h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    max-width: 60rem;
+    width: 100%;
+  }
+
+  ul {
+    @include flex(row, space-between, stretch);
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+    margin-top: 3rem;
+
+    li {
+      display: flex;
+      flex: 1;
+      min-width: 30rem;
+    }
+  }
+
+  &__card {
+    @include flex(column, center, center);
+    height: 100%;
+    width: 100%;
+    background: $gradient2;
+
+    h5 {
+      margin: 0.5rem 0 1rem 0;
+    }
+
+    p {
+      flex: 1;
+    }
+  }
+}
+
+.get-started {
+  max-width: 80rem;
+  width: 100%;
+  &__card {
+    background: $gradient3;
+
+    h3 {
+      text-align: center;
+    }
+
+    div {
+      margin-top: 1rem;
+      @include flex(row, center, center);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    margin-top: 0;
+  }
+  .how-it-works {
+    margin-top: 6rem;
+  }
+}

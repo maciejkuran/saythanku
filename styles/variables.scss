@@ -1,0 +1,30 @@
+$black: black;
+$black-hover: rgb(37, 37, 37);
+$white: white;
+$pink1: #d68391;
+$pink2: #ff0ce7;
+$pink2-hover: #d903c3;
+$grey: #f2f2f2;
+$grey1: #ebeaea;
+$grey2: #787878;
+$green1: rgb(0, 255, 166);
+$red: rgb(255, 55, 0);
+
+$gradient1: linear-gradient(90.19deg, #ebfffa 0.17%, #fff7ff 103.52%);
+$gradient2: linear-gradient(120.75deg, #fdedfa -7.75%, #eafffa 119.75%);
+$gradient3: linear-gradient(90.19deg, #eff0ff 0.17%, #daffef 103.52%);
+$gradient4: linear-gradient(90.19deg, #ebfffa 0.17%, #fff7ff 103.52%);
+$gradient5: linear-gradient(90.19deg, #edeeff 0.17%, #d1ffec 103.52%);
+$gradient6: linear-gradient(92.01deg, #f3fff5 -3.64%, #e2fff6 113.96%, #dfdfdf 113.96%);
+$gradient7: linear-gradient(97.86deg, #f9f9f9 0%, #fafafa 105.64%);
+
+$box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08);
+$box-shadow2: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+$border-radius: 10px;
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}

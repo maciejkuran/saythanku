@@ -1,0 +1,12 @@
+@import '../../styles/variables.scss';
+
+.card {
+  padding: 3rem;
+  box-shadow: $box-shadow;
+  transition: all 200ms ease-in-out;
+  border-radius: $border-radius;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}

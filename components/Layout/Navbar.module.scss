@@ -1,0 +1,128 @@
+@import '../../styles/variables.scss';
+
+.header {
+  border-bottom: $grey1 1px solid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  @include flex(column, center, center);
+  padding: 1rem 0.5rem;
+  box-shadow: rgba(173, 173, 176, 0.2) 0px 7px 29px 0px;
+  z-index: 3;
+  background-color: $white;
+}
+
+.nav {
+  @include flex(row, space-between, center);
+  max-width: 120rem;
+  width: 100%;
+
+  li {
+    cursor: pointer;
+  }
+
+  &__left {
+    @include flex(row, center, center);
+    column-gap: 4rem;
+
+    ul {
+      @include flex(row, center, center);
+      column-gap: 3rem;
+
+      li {
+        font-weight: 500;
+        color: black;
+        font-size: 1.6rem;
+
+        &:hover {
+          color: $grey2;
+        }
+      }
+    }
+  }
+
+  &__right {
+    @include flex(row, center, center);
+    column-gap: 1.5rem;
+
+    &__mobile-menu {
+      display: none;
+    }
+
+    ul {
+      @include flex(row, center, center);
+      column-gap: 0.8rem;
+
+      img {
+        border-radius: 50%;
+        border: 2px solid $pink2;
+
+        &:hover {
+          border-color: $pink2-hover;
+        }
+      }
+
+      svg {
+        height: 22px;
+        width: 22px;
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+          color: $grey2;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  color: $green1 !important;
+}
+
+@media (max-width: 525px) {
+  .nav {
+    &__left {
+      img {
+        height: 20px;
+        width: 20px;
+      }
+
+      ul {
+        column-gap: 1.2rem;
+        li {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .nav {
+    position: relative;
+    &__left {
+      ul {
+        position: fixed;
+        top: 6rem;
+        right: 2rem;
+        @include flex(column, center, center);
+        row-gap: 1.5rem;
+        background-color: $grey1;
+        padding: 2rem;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+      }
+    }
+
+    &__right {
+      &__mobile-menu {
+        display: inline;
+      }
+    }
+
+    .hide {
+      display: none;
+    }
+  }
+}

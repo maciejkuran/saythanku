@@ -1,0 +1,124 @@
+@import '../../styles/variables.scss';
+
+.acc {
+  max-width: 120rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  gap: 2rem;
+
+  &__card {
+    padding: 2rem;
+
+    &__empty {
+      margin-top: 1rem;
+      border-top: 1px solid $grey1;
+      padding-top: 1rem;
+      @include flex(column, center, center);
+
+      p {
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+    }
+
+    &__refresh-btn {
+      position: absolute;
+      top: 4%;
+      right: 4%;
+
+      svg {
+        height: 20px;
+        width: 20px;
+      }
+    }
+
+    &--1 {
+      background: $gradient1;
+      ul {
+        margin-top: 2rem;
+      }
+      li {
+        font-weight: 500;
+      }
+    }
+
+    &--2 {
+      border: 2px solid $grey1;
+      @include flex(column, center, center);
+
+      section {
+        @include flex(column, center, center);
+
+        button {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    &--3 {
+      background: $gradient2;
+    }
+
+    &--4 {
+      background: $gradient3;
+      position: relative;
+    }
+
+    &--5 {
+      background: $gradient6;
+      @include flex(column, center, center);
+
+      section {
+        @include flex(column, center, center);
+
+        button {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    &--6 {
+      background: $gradient7;
+      @include flex(column, center, center);
+
+      section {
+        @include flex(column, center, center);
+
+        button {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+
+  ul {
+    @include flex(column, flex-start, flex-start);
+    row-gap: 1rem;
+    max-height: 25rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1rem;
+
+    li {
+      width: 100%;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+}
+
+@media (max-width: 560px) {
+  .acc {
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+
+    &__card {
+      &--3,
+      &--4 {
+        padding: 1rem !important;
+      }
+    }
+  }
+}

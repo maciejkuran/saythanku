@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+
+.logo {
+  @include flex(row, center, center);
+  column-gap: 0.5rem;
+
+  h5 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 525px) {
+  .logo {
+    h5 {
+      font-size: 1.6rem;
+    }
+  }
+}

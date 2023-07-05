@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@import './variables.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  min-height: 100%;
+  position: relative;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: $black;
+}
+
+input,
+textarea,
+button {
+  font-family: 'Poppins', sans-serif;
+}
+
+svg {
+  color: $black;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: $black;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+input,
+textarea {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+//font-sizes
+h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+h1 span {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+h2,
+h3 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+p,
+a,
+li,
+button,
+input,
+textarea,
+span,
+time {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+label,
+legend {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+button {
+  font-weight: 600;
+}
+
+section {
+  margin: 6rem 0;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(182, 182, 182);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(147, 147, 147);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+input:-webkit-autofill {
+  background: $gradient1;
+  -webkit-box-shadow: 0 0 0 50px white inset;
+}
+
+@media (max-width: 785px) {
+  h1 {
+    font-size: 2.9rem;
+  }
+
+  h1 span {
+    font-size: 2.9rem;
+  }
+
+  h2,
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 1.9rem;
+  }
+
+  p,
+  a,
+  li,
+  button,
+  input,
+  textarea,
+  span,
+  time {
+    font-size: 1.6rem;
+  }
+
+  section {
+    margin: 3rem 0;
+  }
+}

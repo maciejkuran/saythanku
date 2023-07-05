@@ -1,0 +1,49 @@
+@import '../../styles/variables.scss';
+
+.infobox {
+  @include flex(row, space-between, flex-start);
+  flex-wrap: wrap;
+  background: $white;
+  padding: 1rem;
+  position: relative;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  &--unread {
+    border-left: 6px solid $green1;
+  }
+
+  div {
+    @include flex(row, center, center);
+    column-gap: 1rem;
+  }
+
+  p,
+  button {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-weight: 700;
+  }
+
+  p {
+    font-weight: 500;
+  }
+
+  &__date {
+    color: $grey2;
+    font-size: 1.3rem !important;
+  }
+
+  &__new {
+    font-weight: 700;
+    font-size: 0.9rem;
+    position: absolute;
+    color: $grey2;
+    top: 0;
+    left: 0.5rem;
+  }
+}

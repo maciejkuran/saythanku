@@ -1,0 +1,25 @@
+@import '../../styles/variables.scss';
+
+.recovery {
+  max-width: 45rem;
+  width: 100%;
+
+  input {
+    width: 100%;
+  }
+
+  &__submit {
+    @include flex(row, flex-end, flex-end);
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  ul {
+    margin-top: 2rem;
+
+    a {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+}

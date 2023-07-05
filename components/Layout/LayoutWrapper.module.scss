@@ -1,0 +1,12 @@
+@import '../../styles/variables.scss';
+
+.main {
+  margin: 12rem 1rem 20rem 1rem;
+  @include flex(column, center, center);
+
+  @media (max-width: 500px) {
+    .main {
+      margin: 10rem 0.5rem 15rem 0.5rem;
+    }
+  }
+}
