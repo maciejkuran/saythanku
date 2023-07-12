@@ -8,7 +8,7 @@ Don't wait any longer, spread your appreciation.
 
 Expressing gratitude and appreciation to other people is incredibly important. With the saythanku app, you may send a breathtaking customized thank you card for free!
 
-[🔗 saythanku app](https://saythanku.vercel.app/)
+[🔗 saythanku LIVE APP](https://saythanku.vercel.app/)
 
 ## Mission
 
